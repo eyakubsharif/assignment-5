@@ -16,10 +16,10 @@
             <div class="flex gap-10 items-center">
                 <div class="flex gap-2 ">
                     <img class="w-8 h-8" src="assets/checkbox.png" alt="">
-                    <p class="text-2xl font-bold">23</p>
+                    <p class="text-2xl increment font-bold">23</p>
                 </div>
                 <div>
-                    <img src="assets/theme-btn.png" alt="">
+                   <button onclick="changeBgColor()"> <img src="assets/theme-btn.png" alt=""></button>
                 </div>
             </div>
         </header>
@@ -30,17 +30,19 @@
                         <div class="rounded flex w-4/12 gap-3 items-center py-3 px-2 bg-stone-100">
                            <div class="bg-white p-3 w-13 h-13 rounded-full" > <img class="w-7 h-7" src="assets/checkbox.png" alt=""></div>
                             <div class="text-center">
-                                <p>Task assigned</p>
-                                <h2>05</h2>
+                                <p class="task">Task assigned</p>
+                                <h2 class="number">06</h2>
                             </div>
                         </div>
-                        <div class="rounded flex bg-blue-500 w-8/12 gap-3 items-center py-3 px-2 text-white">
+                       <a class="w-9/12 mx-auto ml-10" href="/blogs.html">
+                         <div class="rounded flex bg-blue-500 w-8/12 gap-3 items-center py-3 px-2 text-white">
                             <img class="w-7 h-7" src="assets/board.png" alt="">
                             <div class="text-center">
                                 <p class="font-bold">Discover Something </p>
                                 <h2 class="font-bold">New Todays</h2>
                             </div>
                         </div>
+                       </a>
                         <div class="rounded flex w-4/12 gap-3 items-center py-3 px-2 bg-stone-100">
                             <div class="bg-white p-3 w-13 h-13 rounded-full" > <img class="w-7 h-7" src="assets/calender.png" alt=""></div>
                             <div class="text-center">
@@ -59,7 +61,7 @@
                         </div>
                        <div class="flex gap-2">
                              <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                             <button class="bg-blue-700 mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
+                             <button   class="bg-blue-700 clickBtn mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
                       </div>
                   
                    </div>
@@ -71,7 +73,7 @@
                     </div>
                    <div class="flex gap-2">
                          <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                         <button class="bg-blue-700 mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
+                         <button class="bg-blue-700 clickBtn mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
                   </div>
               
                </div>
@@ -83,7 +85,7 @@
                 </div>
                <div class="flex gap-2">
                      <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                     <button class="bg-blue-700 mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
+                     <button class="bg-blue-700 clickBtn mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
               </div>
           
            </div>
@@ -95,7 +97,7 @@
             </div>
            <div class="flex gap-2">
                  <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-                 <button class="bg-blue-700 mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
+                 <button class="bg-blue-700 clickBtn mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
           </div>
       
        </div>
@@ -107,7 +109,7 @@
         </div>
        <div class="flex gap-2">
              <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-             <button class="bg-blue-700 mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
+             <button class="bg-blue-700 clickBtn mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
       </div>
   
    </div>
@@ -119,7 +121,7 @@
     </div>
    <div class="flex gap-2">
          <p>Deadline <br> <span class="font-bold">21 March 2025</span></p>
-         <button class="bg-blue-700 mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
+         <button class="bg-blue-700 clickBtn btn-6 mt-3 text-white px-3 py-1 rounded font-bold">Completed</button>
   </div>
 
 </div>
@@ -127,22 +129,24 @@
                
         </div>
           <!-- second div  -->
-          <div class="m-5 float-right flex flex-col gap-7">
-             <div class="">
-                <div class="flex">
-                    <img src="assets/activity.png" alt="">
-                    <p>Activity Log</p>
+          <div class="box  m-5 float-right flex flex-col gap-7">
+                <div>
+                    <div class="flex">
+                        <img src="assets/activity.png" alt="">
+                        <p>Activity Log</p>
+                    </div>
+                    <button  class="bg-blue-700  mt-3 text-white px-3 py-1 rounded font-bold">Clear History</button>
                 </div>
-                <button class="bg-blue-700 mt-3 text-white px-3 py-1 rounded font-bold">Clear History</button>
+               
             </div>
-           
-            </div>
-         </div>  
+         
             
             
             
             
             
                 </div>
+
+                <script src="index.js"></script>
               </body>
             </html>
